@@ -1,6 +1,11 @@
 # ES2017-Tips
 
-## LET & CONST
+## Table of contents
+1. [Let & Const](#1)
+2. [Arrow Functions](#2)
+3. [Export & Import](#3)
+
+## Let & Const <a name="1"/>
 ##### VAR
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var can still be used but its not recommended.</p>
 
@@ -12,7 +17,7 @@
 
 ---
 
-## Arrow Functions
+## Arrow Functions <a name="2"/>
 ##### Older functions used to be like
 ```javascript
 function functionName() {
@@ -44,3 +49,4 @@ console.log(multiplierOf2(3));
 Try out in JSBIN --> https://jsbin.com/jalexig/3/edit?js,console
 
 ---
+## Export & Import <a name="3"/>
