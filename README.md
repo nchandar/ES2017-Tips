@@ -38,9 +38,9 @@ Try out in JSBIN --> https://jsbin.com/vatatuq/1/edit?js,console
 
 If we are returning a value with a single attribute being passed to the function, we don't need the return keyword!
 ```javascript
-const multiplierOf2 = (number) => number * 2;
+const multiplierOf2 = number => number * 2;
 console.log(multiplierOf2(3));
 ```
-Try out in JSBIN --> https://jsbin.com/jalexig/2/edit?js,console
+Try out in JSBIN --> https://jsbin.com/jalexig/3/edit?js,console
 
 ---
