@@ -50,3 +50,9 @@ Try out in JSBIN --> https://jsbin.com/jalexig/3/edit?js,console
 
 ---
 ## Export & Import <a name="3"/>
+![Image1](https://github.com/nchandar/ES2017-Tips/blob/master/exports1.jpeg)
+
+Some more tips using exports and imports!
+![Image2](https://github.com/nchandar/ES2017-Tips/blob/master/exports2.jpeg)
+
+---
