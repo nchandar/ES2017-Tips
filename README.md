@@ -4,6 +4,7 @@
 1. [Let & Const](#1)
 2. [Arrow Functions](#2)
 3. [Export & Import](#3)
+4. [Classes](#4)
 
 ## Let & Const <a name="1"/>
 ##### VAR
@@ -56,3 +57,50 @@ Some more tips using exports and imports!
 ![Image2](https://github.com/nchandar/ES2017-Tips/blob/master/exports2.jpeg)
 
 ---
+## Classes <a name="4"/>
+##### Classes are essentially blue-prints for objects (eg : using one blue print we can create multiple houses.)
+```javascript
+class People {
+    let name = 'max';  // PROPERTY --> variables in a class
+    call = () => {...}  // METHOD --> functions attached to class
+}
+```
+
+```javascript
+class firstName {
+  constructor() {
+      this.fname = 'Niranjan';
+  }
+  
+  printFName() {
+      console.log("My First Name is : " + this.fname);
+  }
+}
+
+class lastName extends firstName{
+    constructor() {
+      super(); // We need this super keyword when trying to access a extended classes variable.
+      this.lname = "Chandarraj";
+      // this.fname = "Ninja"; //This will override the fname from th eextended function.
+    }
+  
+    printLastName() {
+      console.log(this.lname);
+      console.log(this.fname);
+    }
+  
+    superMethod() {
+      // Super can we used to call method from the extended class. 
+      super.printFName();
+    }
+}
+
+const name = new lastName();
+name.printLastName();
+name.superMethod();
+```
+Link to JSBIN --> https://jsbin.com/wevasov/edit?js,console
+
+---
+
+
