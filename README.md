@@ -6,6 +6,7 @@
 3. [Export & Import](#3)
 4. [Classes](#4)
 5. [Spread & Rest Operator](#5)
+6. [Destructuring Arrays and Objects](#6)
 
 ## Let & Const <a name="1"/>
 ##### VAR
@@ -148,5 +149,29 @@ newFunc(1, 2, 3, 4); //output --> [1, 2, 3, 4]
 
 ```
 Link to JSBIN --> https://jsbin.com/kosaxub/2/edit?js,console
+
+---
+## Destructuring Arrays and Objects <a name="6"/>
+##### It allows us to easily extract array element(s) or object property(s) into a variable. It is almost similar to spread operator, but efficient that it..
+```javascript
+//Array Destructuring
+const num = [1, 2, 3, 4];
+[a, b, c, d] = num;
+console.log(a, b, c, d); //Output --> 1 2 3 4
+[g, , , h] = num;
+console.log(g, h); //Output --> 1 4
+```
+Try out --> https://jsbin.com/zutosok/2/edit?js,console
+
+```javascript
+//Object Destructuring
+var obj = {
+  name : 'Niranjan',
+  ph : 1234
+}
+
+{name, ph} = obj;
+console.log(name) //output --> Niranjan
+```
 
 ---
