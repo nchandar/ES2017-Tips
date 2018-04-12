@@ -5,6 +5,7 @@
 2. [Arrow Functions](#2)
 3. [Export & Import](#3)
 4. [Classes](#4)
+5. [Spread & Rest Operator](#5)
 
 ## Let & Const <a name="1"/>
 ##### VAR
@@ -103,4 +104,49 @@ Link to JSBIN --> https://jsbin.com/wevasov/edit?js,console
 
 ---
 
+## Spread & Rest Operator <a name="5"/>
+##### Both the spread and the rest operator are indicated by these 3 dots ...
+##### Spread Operator --> It is used to spilt up all the elements in an array or all the properties in an object.
+```javascript
+//Splitting up all the elements in an array.
+const num = [1, 2, 3, 4];
+const newNum = [...num, 1000];
 
+console.log(newNum);  //Ans is ==> [1, 2, 3, 4, 1000]
+```
+Link to JSBIN -->  https://jsbin.com/kubujuy/1/edit?js,console
+
+```javascript
+//Splitting up all the properties in an object.
+const obj = {
+  name : 'Niranjan',
+  Phone : '12345678'
+}
+
+const newObj = {
+  ...obj,
+  address : 'xyz'
+}
+
+console.log(newObj); 
+//The result is 
+//{
+//   address: "xyz",
+//   name: "Niranjan",
+//   Phone: "12345678"
+// }
+```
+Link to JSBIN --> https://jsbin.com/wucubef/1/edit?js,console
+
+##### Rest Operator --> It is used to combine all the arguments/parameters passed into a function into an array. 
+```javascript
+const newFunc = (...args) => {
+  console.log(args);
+}
+
+newFunc(1, 2, 3, 4); //output --> [1, 2, 3, 4]
+
+```
+Link to JSBIN --> https://jsbin.com/kosaxub/2/edit?js,console
+
+---
